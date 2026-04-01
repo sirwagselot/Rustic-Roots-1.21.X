@@ -3,34 +3,25 @@
 	"id": "rusticroots",
 	"version": "${version}",
 	"name": "Rustic Roots",
-	"description": "Adds cozy, rustic farming and cooking to Minecraft with heirloom crops, hearty meals, and a warm homestead feel.",
+	"description": "A rustic farming and cooking mod.",
 	"authors": [
-		"SirWagselot!"
+		"sirwagselot"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
+	"contact": {},
+	"license": "MIT",
 	"icon": "assets/rusticroots/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.sirwagselot.rusticroots.RusticRoots"
 		],
-		"fabric-datagen": [
-			"net.sirwagselot.rusticroots.RusticRootsDataGenerator"
-		],
 		"client": [
 			"net.sirwagselot.rusticroots.RusticRootsClient"
 		]
 	},
-	"mixins": [
-		"rusticroots.mixins.json"
-	],
 	"depends": {
-		"fabricloader": ">=0.18.5",
-		"minecraft": "~1.21.11",
+		"fabricloader": ">=0.16.14",
+		"minecraft": "1.21.11",
 		"java": ">=21",
 		"fabric-api": "*"
 	}

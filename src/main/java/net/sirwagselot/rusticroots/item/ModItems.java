@@ -1,7 +1,9 @@
 package net.sirwagselot.rusticroots.item;
 
-import net.minecraft.component.type.FoodComponent;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -10,7 +12,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.sirwagselot.rusticroots.RusticRoots;
-
+import net.sirwagselot.rusticroots.block.ModBlocks;
 
 public class ModItems {
     public static final Item TOMATO = registerItem("tomato", new Item.Settings().food(
@@ -20,7 +22,7 @@ public class ModItems {
                     .build()
     ));
 
-    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds", new Item.Settings());
+    public static final Item TOMATO_SEEDS = registerSeedItem("tomato_seeds", ModBlocks.TOMATO_CROP);
 
     private static Item registerItem(String name, Item.Settings settings) {
         Identifier id = Identifier.of(RusticRoots.MOD_ID, name);
@@ -28,6 +30,17 @@ public class ModItems {
         Item item = new Item(settings.registryKey(
                 RegistryKey.of(RegistryKeys.ITEM, id)
         ));
+
+        return Registry.register(Registries.ITEM, id, item);
+    }
+
+    private static Item registerSeedItem(String name, Block cropBlock) {
+        Identifier id = Identifier.of(RusticRoots.MOD_ID, name);
+
+        Item item = new BlockItem(
+                cropBlock,
+                new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, id))
+        );
 
         return Registry.register(Registries.ITEM, id, item);
     }
