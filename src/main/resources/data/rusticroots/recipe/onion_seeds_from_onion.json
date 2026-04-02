@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:onion"
+  ],
+  "result": {
+    "id": "rusticroots:onion_seeds",
+    "count": 1
+  }
+}

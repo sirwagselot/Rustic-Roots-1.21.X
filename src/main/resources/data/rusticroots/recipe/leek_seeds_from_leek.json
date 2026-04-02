@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:leek"
+  ],
+  "result": {
+    "id": "rusticroots:leek_seeds",
+    "count": 1
+  }
+}

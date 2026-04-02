@@ -1,4 +1,8 @@
 {
   "item.rusticroots.tomato": "Tomato",
-  "item.rusticroots.tomato_seeds": "Tomato Seeds"
+  "item.rusticroots.tomato_seeds": "Tomato Seeds",
+  "item.rusticroots.leek": "Leek",
+  "item.rusticroots.leek_seeds": "Leek Seeds",
+  "item.rusticroots.onion": "Onion",
+  "item.rusticroots.onion_seeds": "Onion Seeds"
 }

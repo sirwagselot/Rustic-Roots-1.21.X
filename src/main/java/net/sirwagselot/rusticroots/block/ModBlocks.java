@@ -9,20 +9,27 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.sirwagselot.rusticroots.RusticRoots;
+import net.sirwagselot.rusticroots.block.custom.LeekCropBlock;
 import net.sirwagselot.rusticroots.block.custom.TomatoCropBlock;
+import net.sirwagselot.rusticroots.block.custom.OnionCropBlock;
 
 public class ModBlocks {
-    public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop");
+    public static final Block TOMATO_CROP = registerCropBlock("tomato_crop", new TomatoCropBlock(
+            AbstractBlock.Settings.copy(Blocks.WHEAT)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(RusticRoots.MOD_ID, "tomato_crop")))
+    ));
 
-    private static Block registerBlockWithoutItem(String name) {
-        Identifier id = Identifier.of(RusticRoots.MOD_ID, name);
+    public static final Block LEEK_CROP = registerCropBlock("leek_crop", new LeekCropBlock(
+            AbstractBlock.Settings.copy(Blocks.WHEAT)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(RusticRoots.MOD_ID, "leek_crop")))
+    ));
 
-        Block block = new TomatoCropBlock(
-                AbstractBlock.Settings.copy(Blocks.WHEAT)
-                        .registryKey(RegistryKey.of(RegistryKeys.BLOCK, id))
-        );
-
-        return Registry.register(Registries.BLOCK, id, block);
+    public static final Block ONION_CROP = registerCropBlock("onion_crop", new OnionCropBlock(
+            AbstractBlock.Settings.copy(Blocks.WHEAT)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(RusticRoots.MOD_ID, "onion_crop")))
+    ));
+    private static Block registerCropBlock(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(RusticRoots.MOD_ID, name), block);
     }
 
     public static void registerModBlocks() {
