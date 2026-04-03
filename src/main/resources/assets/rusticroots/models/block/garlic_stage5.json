@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "rusticroots:block/garlic_stage5"
+  }
+}

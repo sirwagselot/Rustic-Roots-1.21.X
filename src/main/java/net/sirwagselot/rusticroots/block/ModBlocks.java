@@ -12,6 +12,8 @@ import net.sirwagselot.rusticroots.RusticRoots;
 import net.sirwagselot.rusticroots.block.custom.LeekCropBlock;
 import net.sirwagselot.rusticroots.block.custom.TomatoCropBlock;
 import net.sirwagselot.rusticroots.block.custom.OnionCropBlock;
+import net.sirwagselot.rusticroots.block.custom.GarlicCropBlock;
+import net.sirwagselot.rusticroots.block.custom.PeaCropBlock;
 
 public class ModBlocks {
     public static final Block TOMATO_CROP = registerCropBlock("tomato_crop", new TomatoCropBlock(
@@ -27,6 +29,16 @@ public class ModBlocks {
     public static final Block ONION_CROP = registerCropBlock("onion_crop", new OnionCropBlock(
             AbstractBlock.Settings.copy(Blocks.WHEAT)
                     .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(RusticRoots.MOD_ID, "onion_crop")))
+    ));
+
+    public static final Block GARLIC_CROP = registerCropBlock("garlic_crop", new GarlicCropBlock(
+            AbstractBlock.Settings.copy(Blocks.WHEAT)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(RusticRoots.MOD_ID, "garlic_crop")))
+    ));
+
+    public static final Block PEA_CROP = registerCropBlock("pea_crop", new PeaCropBlock(
+            AbstractBlock.Settings.copy(Blocks.WHEAT)
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(RusticRoots.MOD_ID, "pea_crop")))
     ));
     private static Block registerCropBlock(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(RusticRoots.MOD_ID, name), block);

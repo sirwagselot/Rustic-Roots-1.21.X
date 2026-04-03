@@ -4,5 +4,9 @@
   "item.rusticroots.leek": "Leek",
   "item.rusticroots.leek_seeds": "Leek Seeds",
   "item.rusticroots.onion": "Onion",
-  "item.rusticroots.onion_seeds": "Onion Seeds"
+  "item.rusticroots.onion_seeds": "Onion Seeds",
+  "item.rusticroots.garlic": "Garlic",
+  "item.rusticroots.garlic_seeds": "Garlic Seeds",
+  "item.rusticroots.pea": "Pea",
+  "item.rusticroots.pea_seeds": "Pea Seeds"
 }

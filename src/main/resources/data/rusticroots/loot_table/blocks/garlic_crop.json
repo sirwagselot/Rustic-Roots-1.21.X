@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rusticroots:garlic",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "rusticroots:garlic_crop",
+              "properties": {
+                "age": "5"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "rusticroots:garlic_seeds",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:block_state_property",
+                "block": "rusticroots:garlic_crop",
+                "properties": {
+                  "age": "5"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

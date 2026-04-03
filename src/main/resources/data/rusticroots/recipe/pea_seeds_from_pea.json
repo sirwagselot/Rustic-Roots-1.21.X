@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:pea"
+  ],
+  "result": {
+    "id": "rusticroots:pea_seeds",
+    "count": 1
+  }
+}

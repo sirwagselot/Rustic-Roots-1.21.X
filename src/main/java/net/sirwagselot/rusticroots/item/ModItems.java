@@ -49,6 +49,24 @@ public class ModItems {
 
     public static final Item ONION_SEEDS = registerSeedItem("onion_seeds", ModBlocks.ONION_CROP);
 
+    public static final Item GARLIC = registerItem("garlic", new Item.Settings().food(
+            new FoodComponent.Builder()
+                    .nutrition(1)
+                    .saturationModifier(0.5f)
+                    .build()
+    ));
+
+    public static final Item GARLIC_SEEDS = registerSeedItem("garlic_seeds", ModBlocks.GARLIC_CROP);
+
+    public static final Item PEA = registerItem("pea", new Item.Settings().food(
+            new FoodComponent.Builder()
+                    .nutrition(2)
+                    .saturationModifier(0.3f)
+                    .build()
+    ));
+
+    public static final Item PEA_SEEDS = registerSeedItem("pea_seeds", ModBlocks.PEA_CROP);
+
     private static Item registerSeedItem(String name, Block cropBlock) {
         Identifier id = Identifier.of(RusticRoots.MOD_ID, name);
         Item item = new BlockItem(
@@ -68,6 +86,10 @@ public class ModItems {
             entries.add(LEEK_SEEDS);
             entries.add(ONION);
             entries.add(ONION_SEEDS);
+            entries.add(GARLIC);
+            entries.add(GARLIC_SEEDS);
+            entries.add(PEA);
+            entries.add(PEA_SEEDS);
         });
     }
 }

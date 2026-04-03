@@ -11,5 +11,7 @@ public class RusticRootsClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.TOMATO_CROP, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.LEEK_CROP, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.ONION_CROP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GARLIC_CROP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.PEA_CROP, BlockRenderLayer.CUTOUT);
     }
 }

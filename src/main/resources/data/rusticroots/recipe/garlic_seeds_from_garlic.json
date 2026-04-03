@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:garlic"
+  ],
+  "result": {
+    "id": "rusticroots:garlic_seeds",
+    "count": 1
+  }
+}
