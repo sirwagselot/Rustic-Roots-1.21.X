@@ -4,15 +4,10 @@ import net.minecraft.block.CropBlock;
 import net.minecraft.item.ItemConvertible;
 import net.sirwagselot.rusticroots.item.ModItems;
 
-public class OnionCropBlock extends CropBlock {
+public class OnionCropBlock extends ModCropBlock {
 
     public OnionCropBlock(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public int getMaxAge() {
-        return 5;
     }
 
     @Override

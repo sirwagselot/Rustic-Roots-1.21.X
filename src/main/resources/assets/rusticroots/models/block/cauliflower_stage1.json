@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "rusticroots:block/cauliflower_stage1"
+  }
+}

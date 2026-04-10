@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:purplecabbage"
+  ],
+  "result": {
+    "id": "rusticroots:purplecabbage_seeds",
+    "count": 1
+  }
+}

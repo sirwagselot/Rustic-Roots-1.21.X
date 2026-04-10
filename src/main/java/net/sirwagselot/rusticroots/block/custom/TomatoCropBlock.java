@@ -4,15 +4,10 @@ import net.minecraft.block.CropBlock;
 import net.minecraft.item.ItemConvertible;
 import net.sirwagselot.rusticroots.item.ModItems;
 
-public class TomatoCropBlock extends CropBlock {
+public class TomatoCropBlock extends ModCropBlock {
 
     public TomatoCropBlock(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public int getMaxAge() {
-        return 5; // your custom max stage
     }
 
     @Override

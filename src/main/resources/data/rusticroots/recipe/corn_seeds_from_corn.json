@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:corn"
+  ],
+  "result": {
+    "id": "rusticroots:corn_seeds",
+    "count": 1
+  }
+}

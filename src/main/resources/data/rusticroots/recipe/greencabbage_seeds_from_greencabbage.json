@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:greencabbage"
+  ],
+  "result": {
+    "id": "rusticroots:greencabbage_seeds",
+    "count": 1
+  }
+}

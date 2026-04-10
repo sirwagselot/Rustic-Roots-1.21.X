@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:broccoli"
+  ],
+  "result": {
+    "id": "rusticroots:broccoli_seeds",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "rusticroots:cucumber"
+  ],
+  "result": {
+    "id": "rusticroots:cucumber_seeds",
+    "count": 1
+  }
+}
